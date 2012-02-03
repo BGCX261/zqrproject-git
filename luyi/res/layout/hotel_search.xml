@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/imgfx" android:background="@drawable/fx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_title_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="酒店搜索" android:layout_toLeftOf="@id/imgfx" android:layout_toRightOf="@id/img02" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_01" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_top">
+        <ImageView android:id="@id/img_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/a1" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cityname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="入住城市" android:layout_toRightOf="@id/img_01" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_cityname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="北京" android:layout_toLeftOf="@id/img_go01" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_line01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_below="@id/layout_01" />
+    <RelativeLayout android:id="@id/layout_02" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/img_line01">
+        <RelativeLayout android:id="@id/layout_split01" android:background="@color/layout_split" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/layout_checkindate" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/layout_split01">
+            <ImageView android:id="@id/img_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/calendar" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_checkindate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:text="入住时间" android:layout_toRightOf="@id/img_03" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_checkindate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2011-12-09" android:layout_below="@id/txt_title_checkindate" android:layout_alignLeft="@id/txt_title_checkindate" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_checkoutdate" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/layout_split01">
+            <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_checkoutdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="退房时间" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_checkoutdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2011-12-10" android:layout_below="@id/txt_title_checkoutdate" android:layout_alignRight="@id/txt_title_checkoutdate" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/img_line02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_below="@id/layout_02" />
+    <RelativeLayout android:id="@id/layout_03" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/img_line02">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_hotelkey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="关键字" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:id="@id/txt_hotelkey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="酒店名/地点" android:layout_toLeftOf="@id/img_go02" android:layout_toRightOf="@id/txt_title_hotelkey" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_line03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_below="@id/layout_03" />
+    <RelativeLayout android:id="@id/layout_04" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/img_line03">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="价格范围" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_toLeftOf="@id/img_go03" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_line04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_below="@id/layout_04" />
+    <RelativeLayout android:id="@id/layout_05" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/img_line04">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="星级" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_toLeftOf="@id/img_go04" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_line05" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/line" android:layout_below="@id/layout_05" />
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/btnSearch" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:text="搜     索" android:layout_below="@id/img_line05" android:layout_centerHorizontal="true" />
+    <ListView android:id="@id/listview_select_province" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/btnSearch" />
+    <include android:id="@id/progressbar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_ui" />
+</RelativeLayout>

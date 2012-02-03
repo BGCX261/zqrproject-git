@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/llayout00" android:background="@drawable/login_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/btn_login_reg" android:background="@drawable/button_style" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:text="马上注册" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/txt_top_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_login_top_name" android:layout_below="@id/btn_login_reg" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/llayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_below="@id/llayout00">
+        <RelativeLayout android:id="@id/llayout001" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:id="@id/txtUserNo" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/txt_userno_title" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/editTxtUserNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="请输入手机号码" android:maxLines="1" android:singleLine="true" android:maxLength="11" android:numeric="integer" android:layout_toRightOf="@id/txtUserNo" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/llayout002" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/llayout001">
+            <TextView android:textColor="@color/black" android:id="@id/txtPassword" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/txt_pwd_title" android:layout_alignLeft="@id/txtUserNo" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/editTxtPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="请输入密码" android:maxLines="1" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/txtPassword" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/llayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llayout01">
+        <CheckBox android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/checkbox_isAutoLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:checked="true" android:text="下次自动登录" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/txt_forgetpwd" android:background="@drawable/textview_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="@string/txt_get_pwd" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/llayout04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/llayout03">
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/btnLogin" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/txt_login_name" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_reg" android:background="@drawable/textview_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/txt_reg_name" android:layout_below="@id/llayout04" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/progresslayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/pb01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/loading_bar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候" android:layout_below="@id/pb01" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

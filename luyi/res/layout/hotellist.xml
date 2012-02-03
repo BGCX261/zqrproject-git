@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_search_style" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_title_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="北京" android:layout_toLeftOf="@id/img_select" android:layout_toRightOf="@id/img02" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray2" android:id="@id/txt_title_top_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="入:退:" android:layout_below="@id/layout_top" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray2" android:id="@id/txt_hotelcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="" android:layout_below="@id/layout_top" android:layout_alignParentRight="true" />
+    <ListView android:id="@id/listview_hotellist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:cacheColorHint="#00000000" android:divider="@drawable/line" android:layout_below="@id/txt_hotelcount" android:fastScrollEnabled="true" android:fadeScrollbars="true" />
+    <RelativeLayout android:id="@id/progresslayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/pb01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/loading_bar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候" android:layout_below="@id/pb01" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_title_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="最低价格:200" />
+    <SeekBar android:id="@id/seekbar_lowestrate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="10" android:progress="0" android:layout_below="@id/txt_title_low" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_title_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="最高价格:2000" android:layout_below="@id/seekbar_lowestrate" />
+    <SeekBar android:id="@id/seekbar_highestrate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="10" android:progress="0" android:layout_below="@id/txt_title_high" />
+    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/btn_select_star" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="确定" android:layout_below="@id/seekbar_highestrate" android:layout_centerHorizontal="true" />
+</LinearLayout>

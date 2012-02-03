@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgfx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/image_mainvip_style" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/imgaboutus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/aboutus2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/imgmainperson" android:background="@drawable/image_mainperson_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_above="@id/imgaboutus" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/imgmainhotel" android:background="@drawable/image_mainhotel_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/imgmainperson" />
+    <RelativeLayout android:id="@id/progresslayout" android:background="@color/sliver" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ViewFlipper android:id="@id/ViewFlipper01" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/pb01" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/loading_bar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="初始化软件" android:layout_below="@id/pb01" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/home_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/orangered" android:gravity="center" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="免费送VIP，体验露意出行" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/order_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="活动时间:2011年12月22日-2012年1月22日\n官方网址：www.luyi.com" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="露意！服务随行！！安卓（Android）手机用户有福啦！！！" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="露意特点是消费就返现、酒店预订快、返现快、提现快。我们正在扩展更多更好的服务！" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/red" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="活动期间将不限量送VIP,VIP有效期为一个月,请到我们的官方网站申请。" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VIP会员在每笔消费中可享受更高的返现力度和个性化的服务\n   普通会员：2%" />
+                <RelativeLayout android:id="@id/layout_body2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip">
+                    <RelativeLayout android:id="@id/layout_body2_01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/img_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/vip1" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_c_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="6%" android:layout_toRightOf="@id/img_01" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_body2_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_body2_01">
+                        <ImageView android:id="@id/img_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/vip2" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_c_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="7%" android:layout_toRightOf="@id/img_02" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/layout_body2_03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_body2_02">
+                        <ImageView android:id="@id/img_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/vip3" android:layout_centerVertical="true" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_c_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="8%" android:layout_toRightOf="@id/img_03" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以上为实际消费金额的返现百分比，返现力度将不断提升！" />
+            </LinearLayout>
+            <Button android:id="@id/btn_event" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="去官网申请VIP" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/suggestion_top" />
+    <EditText android:gravity="top" android:id="@id/edittext_suggestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:lines="5" android:layout_below="@id/txt_title_top" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_title_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/txt_email" android:layout_below="@id/edittext_suggestion" />
+    <EditText android:id="@id/edittext_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="" android:hint="请输入您的邮箱" android:lines="1" android:layout_below="@id/txt_title_email" />
+    <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_submit" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="提    交" android:layout_below="@id/edittext_email" />
+    <include android:id="@id/progressbar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_ui" />
+</RelativeLayout>

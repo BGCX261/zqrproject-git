@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/llayout00" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_reg_name2" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/llayout01" android:background="@drawable/login_editlayout_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:layout_below="@id/llayout00">
+        <RelativeLayout android:id="@id/llayout001" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/black" android:id="@id/txtPhoneNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/txt_phoneno" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/editTxtPhoneNo" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip" android:hint="@string/txt_hint_phoneno" android:maxLines="1" android:singleLine="true" android:maxLength="11" android:phoneNumber="true" android:layout_toRightOf="@id/txtPhoneNo" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/llayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/llayout001">
+            <TextView android:textColor="@color/black" android:id="@id/txtPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/txt_password" android:layout_alignLeft="@id/txtPhoneNo" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/editTxtPwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip" android:hint="@string/txt_hint_password" android:maxLines="1" android:password="true" android:singleLine="true" android:maxLength="30" android:layout_toRightOf="@id/txtPwd" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btnRegister" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="40.0dip" android:text="@string/txt_reg_name2" android:layout_below="@id/llayout01" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/blue" android:id="@id/txt_haveluyi_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/txt_have_reg" android:layout_below="@id/btnRegister" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/progresslayout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/pb01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/loading_bar" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请稍候" android:layout_below="@id/pb01" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

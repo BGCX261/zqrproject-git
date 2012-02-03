@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtMsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hello" />
+    <Button android:id="@id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="start" />
+    <Button android:id="@id/btnGetHotelList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="get" />
+    <Button android:id="@id/btnGetHotelBaseInfoList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="getBase" />
+    <ListView android:id="@id/listview_hotellist" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提     现" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_01" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layout_top">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="现金账户:" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/txt_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0.0元" android:layout_toRightOf="@id/txt_title_cash" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line01" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_01" />
+    <RelativeLayout android:id="@id/layout_02" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layout_line01">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="冻结金额:" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/orangered" android:id="@id/txt_cash_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0.0元" android:layout_toRightOf="@id/txt_title_cash_f" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line02" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_02" />
+    <RelativeLayout android:id="@id/layout_03" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layout_line02">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="提现账户" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_cash_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:layout_toLeftOf="@id/img_go01" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line03" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_03" />
+    <RelativeLayout android:id="@id/layout_04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_03">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="提现金额:" />
+        <EditText android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_cash_m" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="" android:hint="0" android:numeric="integer" android:layout_below="@id/txt_title_cash_m" android:layout_centerHorizontal="true" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_cash_submit" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:text="提     交" android:layout_below="@id/txt_cash_m" />
+    </RelativeLayout>
+    <include android:id="@id/progressBar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_ui" />
+</RelativeLayout>

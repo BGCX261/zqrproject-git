@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/txt_title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户设置" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_body" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_top">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="提现账户:" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_title_alipayno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="提现账户" android:layout_toLeftOf="@id/img_go01" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_body" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/red" android:id="@id/txt_title_alipayno_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/txt_alipayno_info" android:layout_below="@id/layout_line" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txt_title_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3星级" />
+    <RatingBar android:layout_gravity="center" android:id="@id/ratingbar_select_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:numStars="5" android:rating="3.0" android:stepSize="1.0" android:isIndicator="false" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/btn_select_star_all" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="不限" />
+        <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/btn_select_star" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

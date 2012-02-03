@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/txt_title_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关键字" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_keys" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/layout_top">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_keys_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="请输入酒店关键字" />
+        <EditText android:id="@id/edittext_search_keys" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="请输入酒店名称" android:singleLine="true" android:layout_below="@id/txt_keys_title" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line01" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/layout_keys" />
+    <RelativeLayout android:id="@id/layout_hotArea" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layout_line01">
+        <TextView android:textSize="16.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_hotarea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="热点商圈" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="right" android:id="@id/txt_hotarea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="不限" android:layout_toLeftOf="@id/img_go01" android:layout_toRightOf="@id/txt_title_hotarea" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line02" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_hotArea" />
+    <RelativeLayout android:id="@id/layout_pinpai" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/layout_line02">
+        <TextView android:textSize="16.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_pinpai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="酒店品牌" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_pinpai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="不限" android:layout_toLeftOf="@id/img_go02" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_line03" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_pinpai" />
+    <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btn_select_area" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:text="确     定" android:layout_below="@id/layout_line03" android:layout_centerHorizontal="true" />
+</RelativeLayout>

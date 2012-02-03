@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员续费" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/llayout_01" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/layout_top">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_enddate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="截止日期" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/txt_vip_enddate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="2012-12-12" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_split01" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/llayout_01" />
+    <RelativeLayout android:id="@id/llayout_02" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/layout_split01">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_person_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="现金账户" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/blue" android:id="@id/txt_vip_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="25.0dip" android:text="0.0元" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_split02" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/llayout_02" />
+    <RelativeLayout android:id="@id/llayout_03" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/layout_split02">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_person_realname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="会员时间" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/orangered" android:id="@id/txt_vip_user_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="25.0dip" android:text="6个月" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_split03" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/llayout_03" />
+    <RelativeLayout android:id="@id/llayout_04" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/layout_split03">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_cash_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="充值账户" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_go01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/go01" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/orangered" android:id="@id/txt_vip_cash_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:layout_toLeftOf="@id/img_go01" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_split04" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/llayout_04" />
+    <RelativeLayout android:id="@id/llayout_05" android:background="@drawable/layout_select_style" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_below="@id/layout_split04">
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_left" android:id="@id/txt_title_vip_totle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="总计" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/orangered" android:id="@id/txt_vip_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="25.0dip" android:text="50元" android:layout_toRightOf="@id/txt_title_vip_totle" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_split05" android:background="@color/layout_split" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/llayout_05" />
+    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_vip_submit" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:text="续    费" android:layout_below="@id/layout_split05" />
+</RelativeLayout>

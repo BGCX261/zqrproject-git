@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_body" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_about_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@drawable/about_us_bg" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_version_cr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="V1.0.1" android:layout_below="@id/img_about_us" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_version_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Copyright 2011 luyi.com版权所有" android:layout_below="@id/txt_version_cr" />
+        <RelativeLayout android:id="@id/layout_splitline02" android:background="@color/black" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_below="@id/txt_version_name" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_title_about_us" android:background="@drawable/textview_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/txt_about_us" android:layout_toLeftOf="@id/layout_splitline02" android:layout_below="@id/txt_version_name" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_title_user_agree" android:background="@drawable/textview_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/user_agree_title" android:layout_toRightOf="@id/layout_splitline02" android:layout_below="@id/txt_version_name" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_submit" android:background="@drawable/button_style2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="30.0dip" android:text="意见反馈" android:layout_below="@id/txt_title_about_us" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_about" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_top" android:background="@drawable/topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img02" android:background="@drawable/layout_top_select_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于我们" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="    露意是一个基于位置的生活消费服务产品，帮你快速找到周边的酒店、餐厅等商家，消费成功后我们会返还一定比例的消费金额。" android:layout_below="@id/layout_top" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="    服务随行..." android:layout_below="@id/txt_01" />
+        <RelativeLayout android:id="@id/layout_body2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/txt_02">
+            <RelativeLayout android:id="@id/layout_body2_01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/a_save" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray2" android:id="@id/txt_c_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="消费了就返现！" android:layout_toRightOf="@id/img_01" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_body2_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_body2_01">
+                <ImageView android:id="@id/img_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/a_fast" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray2" android:id="@id/txt_c_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="预订快、返现快、提现快！" android:layout_toRightOf="@id/img_02" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_body2_03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_body2_02">
+                <ImageView android:id="@id/img_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/a_zhun" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray2" android:id="@id/txt_c_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="你在哪？我们跟到哪！" android:layout_toRightOf="@id/img_03" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_body2_04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_body2_03">
+                <ImageView android:id="@id/img_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/a_full" android:layout_below="@id/img_03" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray2" android:id="@id/txt_c_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="酒店？餐厅？KTV...都有！" android:layout_toRightOf="@id/img_04" android:layout_below="@id/img_03" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

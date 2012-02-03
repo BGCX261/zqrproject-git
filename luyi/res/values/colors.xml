@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff444444</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff2696e0</color>
+    <color name="red">#ffff0000</color>
+    <color name="gray2">#ff666666</color>
+    <color name="gray3">#ffeeeeee</color>
+    <color name="gray">#ffcccccc</color>
+    <color name="orange">#ffe65d02</color>
+    <color name="orangeyellow">#fff7941e</color>
+    <color name="green">#ff76b236</color>
+    <color name="blueofapp">#ff3589cb</color>
+    <color name="orangered">#fffebf2e</color>
+    <color name="qianlan">#ff444444</color>
+    <color name="txt_left">#ff999999</color>
+    <color name="layout_select">#ff98d9ff</color>
+    <color name="layout_split">#ffebebeb</color>
+    <color name="txt_select">#fffebf2e</color>
+    <color name="sliver">#00ffffff</color>
+    <color name="transparent">#00000000</color>
+</resources>

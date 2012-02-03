@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_title_lastleavedate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最晚到店时间：" />
+    <SeekBar android:id="@id/seekbar_lastarrivedate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="17" android:progress="8" />
+    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/btn_select_lastarrivedate" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="确定" android:layout_below="@id/seekbar_lastarrivedate" android:layout_centerHorizontal="true" />
+</LinearLayout>
